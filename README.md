@@ -12,3 +12,11 @@ This project is for the Design Sprint 2 deliverable at McMaster University for t
 - Prakhar Jalan
 - Tony Wang
 - Zed Ahmad
+
+## Controls
+The controls of the game is as follows:
+- **WASD or arrow keys:** movement
+- **Spacebar:** jump
+- **Mouse:** camera control
+- **Q:** toggle between equipping the lighter or torch
+- **E:** light/put out the torch (must have torch equipped)
