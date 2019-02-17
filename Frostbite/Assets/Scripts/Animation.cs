@@ -19,19 +19,22 @@ public class Animation : MonoBehaviour
 
     void Update()
     {
-        // Set the torch animation speed based on character walking speed
-        torchAnim.speed = GetAnimationSpeed(characterStats.GetSpeed());
+        if (torchAnim.gameObject.activeSelf)
+        {
+            // Set the torch animation speed based on character walking speed
+            torchAnim.speed = GetAnimationSpeed(characterStats.GetSpeed());
 
-        // Walking/idle torch animation
-        if (Input.GetAxis("Horizontal") != 0 || Input.GetAxis("Vertical") != 0)
-        {
-            // Play running animation if character is moving
-            torchAnim.Play("Running");
-        }
-        else
-        {
-            // Play idle animation if character is not moving
-            torchAnim.GetComponent<Animator>().Play("Idle");
+            // Walking/idle torch animation
+            if (Input.GetAxis("Horizontal") != 0 || Input.GetAxis("Vertical") != 0)
+            {
+                // Play running animation if character is moving
+                torchAnim.Play("Running");
+            }
+            else
+            {
+                // Play idle animation if character is not moving
+                torchAnim.GetComponent<Animator>().Play("Idle");
+            }
         }
     }
 

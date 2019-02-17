@@ -107,8 +107,8 @@ public class Stats : MonoBehaviour
 
     /// <summary>
     /// Coroutine which loses health and temperature over time.
-    /// Health is lost at a rate of 3 health per 1 seconds (subject to change).
-    /// Temperature is lost at a rate of 1 degree per 2 seconds (subject to change).
+    /// If nothing is lit, health is lost at a rate of 3 health per 2 seconds (subject to change), or per 4 seconds if lighter is on.
+    /// If nothing is lit, temperature is lost at a rate of 1 degree per 2 seconds (subject to change), or per 4 seconds if lighter is on.
     /// Called when the torch is not lit, corresponding to the character freezing.
     /// </summary>
     private IEnumerator LoseHealthAndTempOverTime()
@@ -131,7 +131,16 @@ public class Stats : MonoBehaviour
             {
                 temperature--;
             }
-            yield return new WaitForSeconds(2);
+
+            // If lighter is equipped, lose HP/temp slower
+            if (GameObject.FindGameObjectWithTag("Lighter") != null)
+            {
+                yield return new WaitForSeconds(4);
+            }
+            else
+            {
+                yield return new WaitForSeconds(2);
+            }
         }
     }
 
