@@ -28,8 +28,9 @@ public class Interaction : MonoBehaviour
                 // Check if object is within interactable distance
                 if (hit.distance < maxDistance)
                 {
-                    // Perform item interaction here!
-                    Debug.Log("Item interacted.");
+                    // Perform item interaction
+                    Interactable item = hit.collider.gameObject.GetComponent<Interactable>();
+                    item.Interact();
                 }
             }
         }
