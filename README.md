@@ -23,4 +23,7 @@ The controls of the game is as follows:
 - **I:** open/close inventory
 
 ## Instructions
-The executable is found in Frostbite/Prototype\ Build
+To get to executable:
+- **Extract Prototype\ Build.rar
+- **navigate to Prototype\ build
+- **Run Frostbite.exe
