@@ -20,3 +20,7 @@ The controls of the game is as follows:
 - **Mouse:** camera control
 - **Q:** toggle between equipping the lighter or torch
 - **E:** light/put out the torch (must have torch equipped)
+- **I:** open/close inventory
+
+## Instructions
+The executable is found in Frostbite/Prototype\ Build
