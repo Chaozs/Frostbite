@@ -13,6 +13,8 @@ public class Stats : MonoBehaviour
     [SerializeField] private int temperature;   // temperature of character, ranging from 0 to 35; determines walking speed
     private bool isLosingHealthAndTemp;         // indicates if coroutine LoseHealthAndTempOverTime() is running
     private bool isGainingHealthAndTemp;        // indicates if coroutine GainHealthAndTempOverTime() is running
+    public bool inMonsterRange;
+    private bool isTakingDamageFromMonster;     // indicates if coroutine loseHealthEnemy() is running
     private int pagesLeft;                      // how many pages left to burn
 
     // Use this for initialization
@@ -23,6 +25,7 @@ public class Stats : MonoBehaviour
         temperature = 35;
         isLosingHealthAndTemp = false;
         isGainingHealthAndTemp = false;
+        isTakingDamageFromMonster = false;
         pagesLeft = 3;
     }
 
@@ -59,6 +62,10 @@ public class Stats : MonoBehaviour
             {
                 isLosingHealthAndTemp = false;
             }
+        }
+        if (inMonsterRange && !isTakingDamageFromMonster)
+        {
+            StartCoroutine(loseHealthEnemy());
         }
     }
 
@@ -194,6 +201,31 @@ public class Stats : MonoBehaviour
             yield return new WaitForSeconds(1);
         }
         isGainingHealthAndTemp = false;
+    }
+
+    /// <summary>
+    /// Lose health from monster
+    /// </summary>
+    private IEnumerator loseHealthEnemy()
+    {
+        isTakingDamageFromMonster = true;
+
+        while (isTakingDamageFromMonster)
+        {
+            // lose HP
+            if (health > 0)
+            {
+                health = health - 30;
+            }
+            else if (health < 0)
+            {
+                health = 0;
+            }
+            print(health);
+            yield return new WaitForSeconds(3);
+        }
+
+        isTakingDamageFromMonster = false;
     }
 
     /// <summary>
