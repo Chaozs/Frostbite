@@ -13,6 +13,7 @@ public class Stats : MonoBehaviour
     [SerializeField] private int temperature;   // temperature of character, ranging from 0 to 35; determines walking speed
     private bool isLosingHealthAndTemp;         // indicates if coroutine LoseHealthAndTempOverTime() is running
     private bool isGainingHealthAndTemp;        // indicates if coroutine GainHealthAndTempOverTime() is running
+    private int pagesLeft;                      // how many pages left to burn
 
     // Use this for initialization
     void Start()
@@ -22,6 +23,7 @@ public class Stats : MonoBehaviour
         temperature = 35;
         isLosingHealthAndTemp = false;
         isGainingHealthAndTemp = false;
+        pagesLeft = 3;
     }
 
     void Update()
@@ -57,6 +59,25 @@ public class Stats : MonoBehaviour
             {
                 isLosingHealthAndTemp = false;
             }
+        }
+    }
+
+    //getter for pages left
+    public int getPagesLeft()
+    {
+        return pagesLeft;
+    }
+
+    //function for adding or consuming pages
+    public void pagesUsed(bool use)
+    {
+        if (use)
+        {
+            pagesLeft = pagesLeft - 1;
+        }
+        else
+        {
+            pagesLeft = pagesLeft + 1;
         }
     }
 

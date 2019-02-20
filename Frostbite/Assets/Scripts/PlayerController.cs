@@ -10,6 +10,10 @@ public class PlayerController : MonoBehaviour
     private GameObject lighter;
     private GameObject torch;
     private Torch torchScript;
+    private Stats stats;
+
+    public GameObject[] books = new GameObject[4];
+    private bool showInventory = false;
 
     // Use this for initialization
     void Start()
@@ -21,21 +25,41 @@ public class PlayerController : MonoBehaviour
 
         // Set torch as active initally
         lighter.SetActive(false);
+
+        //book inventory hidden by default
+        for(int i=0; i< books.Length; i++)
+        {
+            books[i].SetActive(false);
+        }
+    }
+
+    void Awake()
+    {
+        stats = GetComponent<Stats>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        // Handle Q key input
-        if (Input.GetKeyDown(KeyCode.Q))
+        if (!showInventory)
         {
-            ToggleEquipLighterTorch();
+            // Handle Q key input
+            if (Input.GetKeyDown(KeyCode.Q))
+            {
+                ToggleEquipLighterTorch();
+            }
+
+            // Handle E key input
+            if (Input.GetKeyDown(KeyCode.E))
+            {
+                ToggleLitTorch();
+            }
         }
-        
-        // Handle E key input
-        if (Input.GetKeyDown(KeyCode.E))
+
+        // Handle I key input
+        if (Input.GetKeyDown(KeyCode.I))
         {
-            ToggleLitTorch();
+            ToggleInventory();
         }
     }
 
@@ -62,8 +86,53 @@ public class PlayerController : MonoBehaviour
         // Only light the torch if torch is currently equipped
         if (torch.activeSelf)
         {
-            // !!! TODO: CONSUME 1 CLOTH RESOURCE !!!
-            torchScript.SetIsLit(!torchScript.IsLit());
+
+            
+            //torch can be put out whenever
+            if (torchScript.IsLit())
+            {
+                torchScript.SetIsLit(!torchScript.IsLit());
+            }
+            else
+            {
+                // only light torch is there is paper left
+                if (stats.getPagesLeft() > 0)
+                {
+                    stats.pagesUsed(true);
+                    //use up a page if there are pages left
+
+                    torchScript.SetIsLit(!torchScript.IsLit());
+                }
+            }
+
         }
+    }
+
+    private void ToggleInventory()
+    {
+        //if inventory open, hide all books shown
+        if (showInventory)
+        {
+            for (int i = 0; i < stats.getPagesLeft(); i++)
+            {
+                books[i].SetActive(false);
+            }
+            showInventory = !showInventory;
+        }
+        //show all books owned
+        else
+        {
+            for (int i = 0; i < stats.getPagesLeft(); i++)
+            {
+                books[i].SetActive(true);
+            }
+            showInventory = !showInventory;
+        }
+    }
+
+    //getter for whether inventory is open
+    public bool isInventoryOpen()
+    {
+        return showInventory;
     }
 }

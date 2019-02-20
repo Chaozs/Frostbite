@@ -7,7 +7,8 @@ using UnityEngine;
 /// </summary>
 public class Interaction : MonoBehaviour
 {
-    private const float maxDistance = 1.5f;     // max distance the player can be from an item in order to interact with it
+    private const float maxDistance = 2.5f;     // max distance the player can be from an item in order to interact with it
+    Stats stats;
 
     // Use this for initialization
     void Start()
@@ -30,7 +31,11 @@ public class Interaction : MonoBehaviour
                 {
                     // Perform item interaction
                     Interactable item = hit.collider.gameObject.GetComponent<Interactable>();
-                    item.Interact();
+                    //GameObject item = hit.transform.gameObject;
+                    if(item != null)
+                    {
+                        item.Interact();
+                    }
                 }
             }
         }
