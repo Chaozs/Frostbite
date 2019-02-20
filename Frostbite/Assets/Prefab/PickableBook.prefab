@@ -24,7 +24,7 @@ GameObject:
   - component: {fileID: 65136693047868814}
   - component: {fileID: 114991974907130116}
   m_Layer: 0
-  m_Name: book1 1
+  m_Name: PickableBook
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
