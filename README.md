@@ -20,6 +20,7 @@ The controls of the game is as follows:
 - **Mouse:** camera control
 - **Q:** toggle between equipping the lighter or torch
 - **E:** light/put out the torch (must have torch equipped)
+- **F:** Interact with items (ie. books, house)
 - **I:** open/close inventory
 
 ## Instructions to Play
