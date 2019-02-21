@@ -22,8 +22,7 @@ The controls of the game is as follows:
 - **E:** light/put out the torch (must have torch equipped)
 - **I:** open/close inventory
 
-## Instructions
-To get to executable:
-- **Extract Prototype\ Build.rar
-- **navigate to Prototype\ build
-- **Run Frostbite.exe
+## Instructions to Play
+To get the executable:
+- Unzip **PrototypeExecutable.zip**
+- Run **Frostbite.exe**
