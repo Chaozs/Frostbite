@@ -7,13 +7,14 @@ using UnityEngine;
 /// </summary>
 public class Interaction : MonoBehaviour
 {
-    private const float maxDistance = 2.5f;     // max distance the player can be from an item in order to interact with it
+    private const float maxDistance = 4f;     // max distance the player can be from an item in order to interact with it
     Stats stats;
+    private PlayerController playerController;
 
     // Use this for initialization
     void Start()
     {
-
+        playerController = gameObject.GetComponent<PlayerController>();
     }
 
     // Update is called once per frame
@@ -35,6 +36,7 @@ public class Interaction : MonoBehaviour
                     if(item != null)
                     {
                         item.Interact();
+                        playerController.updateBooks();
                     }
                 }
             }

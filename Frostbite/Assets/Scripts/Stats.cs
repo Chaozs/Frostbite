@@ -16,6 +16,7 @@ public class Stats : MonoBehaviour
     public bool inMonsterRange;
     private bool isTakingDamageFromMonster;     // indicates if coroutine loseHealthEnemy() is running
     private int pagesLeft;                      // how many pages left to burn
+    private PlayerController playerController;
 
     // Use this for initialization
     void Start()
@@ -27,6 +28,7 @@ public class Stats : MonoBehaviour
         isGainingHealthAndTemp = false;
         isTakingDamageFromMonster = false;
         pagesLeft = 3;
+        playerController = gameObject.GetComponent<PlayerController>();
     }
 
     void Update()
@@ -82,6 +84,8 @@ public class Stats : MonoBehaviour
         {
             pagesLeft = pagesLeft + 1;
         }
+        //update display for books
+        playerController.updateBooks();
     }
 
     /// <summary>

@@ -250,6 +250,10 @@ namespace UnityStandardAssets.Characters.FirstPerson
 
         private void RotateView()
         {
+            if (playerController.isInventoryOpen())
+            {
+                return;
+            }
             m_MouseLook.LookRotation (transform, m_Camera.transform);
         }
 

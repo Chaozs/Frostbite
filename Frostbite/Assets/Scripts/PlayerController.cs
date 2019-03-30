@@ -12,8 +12,14 @@ public class PlayerController : MonoBehaviour
     private Torch torchScript;
     private Stats stats;
 
-    public GameObject[] books = new GameObject[4];
+    [SerializeField]
+    private GameObject[] books = new GameObject[4];
+
+    [SerializeField]
+    private GameObject inventory;
+
     private bool showInventory = false;
+    private int currentDisplayedBooks = 0;
 
     // Use this for initialization
     void Start()
@@ -30,6 +36,11 @@ public class PlayerController : MonoBehaviour
         for(int i=0; i< books.Length; i++)
         {
             books[i].SetActive(false);
+        }
+        currentDisplayedBooks = stats.getPagesLeft();
+        for (int i = 0; i < stats.getPagesLeft(); i++)
+        {
+            books[i].SetActive(true);
         }
     }
 
@@ -100,7 +111,6 @@ public class PlayerController : MonoBehaviour
                 {
                     stats.pagesUsed(true);
                     //use up a page if there are pages left
-
                     torchScript.SetIsLit(!torchScript.IsLit());
                 }
             }
@@ -113,20 +123,30 @@ public class PlayerController : MonoBehaviour
         //if inventory open, hide all books shown
         if (showInventory)
         {
-            for (int i = 0; i < stats.getPagesLeft(); i++)
-            {
-                books[i].SetActive(false);
-            }
+            inventory.transform.Translate(0f, -0.6f, 0);
             showInventory = !showInventory;
         }
         //show all books owned
         else
         {
-            for (int i = 0; i < stats.getPagesLeft(); i++)
-            {
-                books[i].SetActive(true);
-            }
+            inventory.transform.Translate(0f, 0.6f, 0);
             showInventory = !showInventory;
+        }
+    }
+
+    //update display for books
+    public void updateBooks()
+    {
+        Debug.Log(currentDisplayedBooks + ", " + stats.getPagesLeft());
+        if(currentDisplayedBooks < stats.getPagesLeft())
+        {
+            books[stats.getPagesLeft() - 1].SetActive(true);
+            currentDisplayedBooks++;
+        }
+        else if (currentDisplayedBooks > stats.getPagesLeft())
+        {
+            books[currentDisplayedBooks - 1].SetActive(false);
+            currentDisplayedBooks--;
         }
     }
 
