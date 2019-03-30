@@ -14,7 +14,7 @@ public class EnemyAI : MonoBehaviour {
     private Torch torch;        //player's torch
     private float distance;
     private int moveSpeed = 4;
-    public AudioSource monsterRoar;    //monster roar
+    private AudioSource monsterSounds;    //monster roar
     private bool soundPlaying;
 
     void Start () {
@@ -22,12 +22,13 @@ public class EnemyAI : MonoBehaviour {
         playerTransform = player.GetComponent<Transform>();
         playerStats = player.GetComponent<Stats>();
         torch = GameObject.FindGameObjectWithTag("Torch").GetComponent<Torch>();
-        monsterRoar.Stop();
+        monsterSounds = gameObject.GetComponent<AudioSource>();
+        monsterSounds.Stop();
     }
 	
 	void Update () {
         chasePlayer();
-        monsterRoar.loop = soundPlaying;
+        monsterSounds.loop = soundPlaying;
     }
 
     //chase player function
@@ -41,7 +42,7 @@ public class EnemyAI : MonoBehaviour {
             //play roar sound if not currently playing
             if (!soundPlaying)
             {
-                monsterRoar.Play();
+                monsterSounds.Play();
                 soundPlaying = true;
                 
             }
@@ -60,7 +61,7 @@ public class EnemyAI : MonoBehaviour {
         }
         else
         {
-            monsterRoar.Stop();
+            monsterSounds.Stop();
             soundPlaying = false;
         }
     }
