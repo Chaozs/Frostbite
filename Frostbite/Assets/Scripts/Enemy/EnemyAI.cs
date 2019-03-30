@@ -49,14 +49,10 @@ public class EnemyAI : MonoBehaviour {
             transform.LookAt(playerTransform);
             transform.position += transform.forward * moveSpeed * Time.deltaTime;
             
-            //if player in range to take damage
-            if(distance < 7)
+            //if player in range of enemy, kill player
+            if(distance < 6)
             {
-                playerStats.inMonsterRange = true;
-            }
-            else
-            {
-                playerStats.inMonsterRange = false;
+                playerStats.killPlayer();
             }
         }
         else

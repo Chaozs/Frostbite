@@ -63,10 +63,6 @@ public class Stats : MonoBehaviour
                 isLosingHealthAndTemp = false;
             }
         }
-        if (inMonsterRange && !isTakingDamageFromMonster)
-        {
-            StartCoroutine(loseHealthEnemy());
-        }
     }
 
     //getter for pages left
@@ -226,6 +222,11 @@ public class Stats : MonoBehaviour
         }
 
         isTakingDamageFromMonster = false;
+    }
+
+    public void killPlayer()
+    {
+        health = 0;
     }
 
     /// <summary>
