@@ -4,20 +4,21 @@ using System.Collections.Generic;
 using UnityEngine;
 
 /// <summary>
-/// This class holds logic for enemy behaviour
+/// This class holds logic for enemy behaviour.
 /// </summary>
-public class EnemyAI : MonoBehaviour {
-
-    private GameObject player;   //player
-    private Transform playerTransform;  //player transform
-    private Stats playerStats;                //player stats
-    private Torch torch;        //player's torch
+public class EnemyAI : MonoBehaviour
+{
+    private GameObject player;          // player
+    private Transform playerTransform;  // player transform
+    private Stats playerStats;          // player stats
+    private Torch torch;                // player's torch
     private float distance;
-    private int moveSpeed = 4;
-    private AudioSource monsterSounds;    //monster roar
+    private readonly int moveSpeed = 6;
+    private AudioSource monsterSounds;  // monster roar
     private bool soundPlaying;
 
-    void Start () {
+    void Start()
+    {
         player = GameObject.FindGameObjectWithTag("Player");
         playerTransform = player.GetComponent<Transform>();
         playerStats = player.GetComponent<Stats>();
@@ -25,8 +26,9 @@ public class EnemyAI : MonoBehaviour {
         monsterSounds = gameObject.GetComponent<AudioSource>();
         monsterSounds.Stop();
     }
-	
-	void Update () {
+
+    void Update()
+    {
         chasePlayer();
         monsterSounds.loop = soundPlaying;
     }
@@ -44,13 +46,13 @@ public class EnemyAI : MonoBehaviour {
             {
                 monsterSounds.Play();
                 soundPlaying = true;
-                
+
             }
             transform.LookAt(playerTransform);
             transform.position += transform.forward * moveSpeed * Time.deltaTime;
-            
+
             //if player in range of enemy, kill player
-            if(distance < 6)
+            if (distance < 6)
             {
                 playerStats.killPlayer();
             }
@@ -72,6 +74,4 @@ public class EnemyAI : MonoBehaviour {
 
         return D;
     }
-
-
 }
