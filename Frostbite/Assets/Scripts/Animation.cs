@@ -7,6 +7,8 @@ using UnityEngine;
 /// </summary>
 public class Animation : MonoBehaviour
 {
+    public bool isEndGameScene;     // whether or not we are at end game scene
+
     private Animator torchAnim;     // Animator for the torch
     private Stats characterStats;   // Stats of the character
 
@@ -25,15 +27,32 @@ public class Animation : MonoBehaviour
             torchAnim.speed = GetAnimationSpeed(characterStats.GetSpeed());
 
             // Walking/idle torch animation
-            if (Input.GetAxis("Horizontal") != 0 || Input.GetAxis("Vertical") != 0)
+            if (isEndGameScene)
             {
-                // Play running animation if character is moving
-                torchAnim.Play("Running");
+                // Only take in input for when forward key is pressed
+                if (Input.GetAxis("Vertical") > 0 && !GetComponent<EndGamePlayerController>().isMirrorSeen)
+                {
+                    // Play running animation if character is moving
+                    torchAnim.Play("Running");
+                }
+                else
+                {
+                    // Play idle animation if character is not moving
+                    torchAnim.GetComponent<Animator>().Play("Idle");
+                }
             }
             else
             {
-                // Play idle animation if character is not moving
-                torchAnim.GetComponent<Animator>().Play("Idle");
+                if (Input.GetAxis("Horizontal") != 0 || Input.GetAxis("Vertical") != 0)
+                {
+                    // Play running animation if character is moving
+                    torchAnim.Play("Running");
+                }
+                else
+                {
+                    // Play idle animation if character is not moving
+                    torchAnim.GetComponent<Animator>().Play("Idle");
+                }
             }
         }
     }
