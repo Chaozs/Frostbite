@@ -72,7 +72,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
             // Only allow player controller movements if game has not ended
             if (!gameEnd.IsGameEnded())
             {
-                if (playerController.isInventoryOpen())
+                if (playerController.isInventoryOpen() || characterStats.getIsReading())
                 {
                     return;
                 }
@@ -111,6 +111,11 @@ namespace UnityStandardAssets.Characters.FirstPerson
             // Only allow player controller movements if game has not ended
             if (!gameEnd.IsGameEnded())
             {
+                if (playerController.isInventoryOpen() || characterStats.getIsReading())
+                {
+                    return;
+                }
+
                 float speed;
                 GetInput(out speed);
                 // always move along the camera forward as it is the direction that it being aimed at
@@ -250,7 +255,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
 
         private void RotateView()
         {
-            if (playerController.isInventoryOpen())
+            if (playerController.isInventoryOpen() || characterStats.getIsReading())
             {
                 return;
             }

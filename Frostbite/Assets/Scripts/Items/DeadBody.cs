@@ -7,9 +7,7 @@ public class DeadBody : Interactable
     /// <summary>
     /// Interaction behaviour with dead body.
     /// </summary>
-    /// 
-    [SerializeField]
-    private bool hasInteracted = false;
+
     [SerializeField]
     Stats stats;
 
@@ -20,10 +18,6 @@ public class DeadBody : Interactable
 
     public override void Interact()
     {
-        if (!hasInteracted)
-        {
-            stats.setIsReading(true);
-            hasInteracted = true;
-        }
+        stats.setIsReading(true);
     }
 }
