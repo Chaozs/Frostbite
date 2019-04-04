@@ -581,6 +581,11 @@ Light:
   m_UseColorTemperature: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!1 &295792236 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1881918301625950, guid: 5e9e851c0e142814dac026a256ba2ac0,
+    type: 2}
+  m_PrefabInternal: {fileID: 2114551077}
 --- !u!1 &624808869
 GameObject:
   m_ObjectHideFlags: 0
@@ -712,7 +717,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gameOverScreen: {fileID: 1687033080109430, guid: 95e46fabff6f2d64eb50edc5a00e71cf,
     type: 2}
-  winScreen: {fileID: 1278802962900028, guid: a5b30aac96e5c88459825c884840aeef, type: 2}
 --- !u!114 &719580938
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -853,35 +857,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!1 &784575434 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1128285324095822, guid: 5e9e851c0e142814dac026a256ba2ac0,
-    type: 2}
-  m_PrefabInternal: {fileID: 2114551077}
---- !u!114 &784575438
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 784575434}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8c160a4c2ff741045b40cef25e704aa5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!182 &784575439
-WindZone:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 784575434}
-  m_Enabled: 1
-  m_Mode: 0
-  m_Radius: 20
-  m_WindMain: 1
-  m_WindTurbulence: 1
-  m_WindPulseMagnitude: 0.5
-  m_WindPulseFrequency: 0.01
 --- !u!1001 &838875494
 Prefab:
   m_ObjectHideFlags: 0
@@ -1516,6 +1491,11 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7c1543f51c5b8cc488fc53ab3cbffbb1, type: 2}
   m_IsPrefabAsset: 0
+--- !u!1 &1425160980 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1984166153366440, guid: 5e9e851c0e142814dac026a256ba2ac0,
+    type: 2}
+  m_PrefabInternal: {fileID: 2114551077}
 --- !u!1 &1433213745 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1552437991620124, guid: 7e2bbe8c573d5b54db8aa9fc9cc00b3e,
@@ -2066,6 +2046,11 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 114318839949368338, guid: 5e9e851c0e142814dac026a256ba2ac0,
+        type: 2}
+      propertyPath: torchStuff.Array.size
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 2}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -2112,6 +2097,34 @@ Prefab:
       propertyPath: openBook
       value: 
       objectReference: {fileID: 1433213745}
+    - target: {fileID: 100002, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1881918301625950, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 23682208242904222, guid: 5e9e851c0e142814dac026a256ba2ac0,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114318839949368338, guid: 5e9e851c0e142814dac026a256ba2ac0,
+        type: 2}
+      propertyPath: torchStuff.Array.data[0]
+      value: 
+      objectReference: {fileID: 295792236}
+    - target: {fileID: 114318839949368338, guid: 5e9e851c0e142814dac026a256ba2ac0,
+        type: 2}
+      propertyPath: torchStuff.Array.data[1]
+      value: 
+      objectReference: {fileID: 1425160980}
+    - target: {fileID: 114318839949368338, guid: 5e9e851c0e142814dac026a256ba2ac0,
+        type: 2}
+      propertyPath: torchStuff.Array.data[2]
+      value: 
+      objectReference: {fileID: 1425160980}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 2}
   m_IsPrefabAsset: 0

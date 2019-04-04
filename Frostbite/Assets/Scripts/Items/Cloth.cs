@@ -7,16 +7,20 @@ public class Cloth : Interactable
     /// <summary>
     /// Interaction behaviour with cloth.
     /// </summary>
-    /// 
+
+    Stats stats;
+
     void Awake()
     {
         stats = FindObjectOfType<Stats>();
     }
 
-    Stats stats;
-
     public override void Interact()
     {
+        if (!stats.getHasLootBody())
+        {
+            return;
+        }
 
         // Add cloth to inventory
 

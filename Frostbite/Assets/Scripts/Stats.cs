@@ -22,7 +22,7 @@ public class Stats : MonoBehaviour
     private int pagesLeft;                      // how many pages left to burn
     private PlayerController playerController;
     private bool isReading;
-    private bool hasLootBody;
+    private bool hasLootBody = false;
 
     // Use this for initialization
     void Awake()
@@ -35,11 +35,18 @@ public class Stats : MonoBehaviour
         isTakingDamageFromMonster = false;
         pagesLeft = 3;
         playerController = gameObject.GetComponent<PlayerController>();
-        hasLootBody = false;
+        foreach(GameObject playerItem in torchStuff)
+        {
+            playerItem.transform.localScale -= new Vector3(0.3f, 0.3f, 0.3f);
+        }
     }
 
     void Update()
     {
+        if(!hasLootBody)
+        {
+            return;
+        }
         // Find the script attached to torch
         if (torch == null)
         {
@@ -295,13 +302,9 @@ public class Stats : MonoBehaviour
         {
             openBook.SetActive(false);
             isReading = false;
-            for (int i = 0; i < 3; i++)
+            foreach (GameObject playerItem in torchStuff)
             {
-                pagesUsed(false);
-            }
-            foreach(GameObject torchItem in torchStuff)
-            {
-                torchItem.SetActive(true);
+                playerItem.transform.localScale += new Vector3(0.3f, 0.3f, 0.3f);
             }
             hasLootBody = true;
         }
