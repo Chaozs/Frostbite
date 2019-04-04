@@ -30,7 +30,10 @@ public class PlayerController : MonoBehaviour
         torchScript = torch.GetComponent<Torch>();
 
         // Set torch as active initally
-        lighter.SetActive(false);
+        if (lighter != null)
+        {
+            lighter.SetActive(false);
+        }
 
         //book inventory hidden by default
         for(int i=0; i< books.Length; i++)

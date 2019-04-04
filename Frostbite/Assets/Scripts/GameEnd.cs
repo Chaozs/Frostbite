@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 /// <summary>
 /// Handles logic regarding win condition of the game.
@@ -8,7 +9,6 @@ using UnityEngine;
 public class GameEnd : MonoBehaviour
 {
     [SerializeField] private GameObject gameOverScreen;     // prefab for game over screen
-    [SerializeField] private GameObject winScreen;          // prefab for "you win" screen
     private Stats characterStats;                           // Stats of the player
     private bool gameEnded;                                 // whether or not the game has ended
 
@@ -30,14 +30,20 @@ public class GameEnd : MonoBehaviour
 
     private void InitiateGameOver()
     {
-        GameObject.Instantiate(gameOverScreen);
-        gameEnded = true;
+        if (!gameEnded)
+        {
+            GameObject.Instantiate(gameOverScreen);
+            gameEnded = true;
+        }
     }
 
     public void InitiateWinScreen()
     {
-        GameObject.Instantiate(winScreen);
-        gameEnded = true;
+        if (!gameEnded)
+        {
+            SceneManager.LoadScene("EndGameScene", LoadSceneMode.Single);
+            gameEnded = true;
+        }
     }
 
     public bool IsGameEnded()
