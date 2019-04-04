@@ -11,12 +11,15 @@ public class Stats : MonoBehaviour
 
     [SerializeField] private int health;        // hp of character, ranging from 0 to 100
     [SerializeField] private int temperature;   // temperature of character, ranging from 0 to 35; determines walking speed
+    [SerializeField]
+    private GameObject openBook;                // book on dead body giving player hints on what to do
     private bool isLosingHealthAndTemp;         // indicates if coroutine LoseHealthAndTempOverTime() is running
     private bool isGainingHealthAndTemp;        // indicates if coroutine GainHealthAndTempOverTime() is running
     public bool inMonsterRange;
     private bool isTakingDamageFromMonster;     // indicates if coroutine loseHealthEnemy() is running
     private int pagesLeft;                      // how many pages left to burn
     private PlayerController playerController;
+    private bool isReading;
 
     // Use this for initialization
     void Start()
@@ -264,5 +267,24 @@ public class Stats : MonoBehaviour
     public void SetTemperature(int temperature)
     {
         this.temperature = temperature;
+    }
+
+    public void setIsReading(bool reading)
+    {
+        if(reading)
+        {
+            openBook.SetActive(true);
+            isReading = true;
+        }
+        else
+        {
+            openBook.SetActive(false);
+            isReading = false;
+        }
+    }
+
+    public bool getIsReading()
+    {
+        return isReading;
     }
 }
