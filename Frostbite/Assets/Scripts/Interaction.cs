@@ -43,7 +43,6 @@ public class Interaction : MonoBehaviour
                         if (item != null)
                         {
                             item.Interact();
-                            playerController.updateBooks();
                         }
                     }
                 }

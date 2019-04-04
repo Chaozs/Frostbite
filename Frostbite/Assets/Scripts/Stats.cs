@@ -22,7 +22,7 @@ public class Stats : MonoBehaviour
     private bool isReading;
 
     // Use this for initialization
-    void Start()
+    void Awake()
     {
         // Set stats to starting values
         health = 100;
