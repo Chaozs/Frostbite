@@ -19,6 +19,10 @@ public class Animation : MonoBehaviour
 
     void Update()
     {
+        if(!characterStats.getHasLootBody())
+        {
+            return;
+        }
         if (torchAnim.gameObject.activeSelf)
         {
             // Set the torch animation speed based on character walking speed

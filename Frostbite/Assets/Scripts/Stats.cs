@@ -13,6 +13,8 @@ public class Stats : MonoBehaviour
     [SerializeField] private int temperature;   // temperature of character, ranging from 0 to 35; determines walking speed
     [SerializeField]
     private GameObject openBook;                // book on dead body giving player hints on what to do
+    [SerializeField]
+    private GameObject[] torchStuff;
     private bool isLosingHealthAndTemp;         // indicates if coroutine LoseHealthAndTempOverTime() is running
     private bool isGainingHealthAndTemp;        // indicates if coroutine GainHealthAndTempOverTime() is running
     public bool inMonsterRange;
@@ -20,6 +22,7 @@ public class Stats : MonoBehaviour
     private int pagesLeft;                      // how many pages left to burn
     private PlayerController playerController;
     private bool isReading;
+    private bool hasLootBody;
 
     // Use this for initialization
     void Awake()
@@ -32,6 +35,7 @@ public class Stats : MonoBehaviour
         isTakingDamageFromMonster = false;
         pagesLeft = 3;
         playerController = gameObject.GetComponent<PlayerController>();
+        hasLootBody = false;
     }
 
     void Update()
@@ -269,17 +273,37 @@ public class Stats : MonoBehaviour
         this.temperature = temperature;
     }
 
+    public void setHasLootBody(bool loot)
+    {
+        hasLootBody = loot;
+    }
+
+    public bool getHasLootBody()
+    {
+        return hasLootBody;
+    }
     public void setIsReading(bool reading)
     {
+        //player is now reading the book
         if(reading)
         {
             openBook.SetActive(true);
             isReading = true;
         }
         else
+        //player is now no longer reading book, and loots 3 books + torch
         {
             openBook.SetActive(false);
             isReading = false;
+            for (int i = 0; i < 3; i++)
+            {
+                pagesUsed(false);
+            }
+            foreach(GameObject torchItem in torchStuff)
+            {
+                torchItem.SetActive(true);
+            }
+            hasLootBody = true;
         }
     }
 
