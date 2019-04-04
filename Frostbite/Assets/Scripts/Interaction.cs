@@ -15,6 +15,7 @@ public class Interaction : MonoBehaviour
     void Start()
     {
         playerController = gameObject.GetComponent<PlayerController>();
+        stats = gameObject.GetComponent<Stats>();
     }
 
     // Update is called once per frame
@@ -23,20 +24,27 @@ public class Interaction : MonoBehaviour
         // Player presses key F, attempting to interact with items
         if (Input.GetKeyDown(KeyCode.F))
         {
-            // Generate raycast to detect objects in front of player
-            RaycastHit hit;
-            if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out hit))
+            if (stats.getIsReading())
             {
-                // Check if object is within interactable distance
-                if (hit.distance < maxDistance)
+                stats.setIsReading(false);
+            }
+            else
+            {
+                // Generate raycast to detect objects in front of player
+                RaycastHit hit;
+                if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out hit))
                 {
-                    // Perform item interaction
-                    Interactable item = hit.collider.gameObject.GetComponent<Interactable>();
-                    //GameObject item = hit.transform.gameObject;
-                    if(item != null)
+                    // Check if object is within interactable distance
+                    if (hit.distance < maxDistance)
                     {
-                        item.Interact();
-                        playerController.updateBooks();
+                        // Perform item interaction
+                        Interactable item = hit.collider.gameObject.GetComponent<Interactable>();
+                        //GameObject item = hit.transform.gameObject;
+                        if (item != null)
+                        {
+                            item.Interact();
+                            playerController.updateBooks();
+                        }
                     }
                 }
             }
