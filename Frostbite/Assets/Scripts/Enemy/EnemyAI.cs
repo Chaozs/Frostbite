@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 /// <summary>
@@ -9,37 +7,53 @@ using UnityEngine;
 public class EnemyAI : MonoBehaviour
 {
     private GameObject player;          // player
-    private Transform playerTransform;  // player transform
     private Stats playerStats;          // player stats
     private Torch torch;                // player's torch
+    private Lighter lighter;            // player's lighter
+    private AudioSource monsterSounds;  // monster roar
+
     private float distance;
     private readonly int moveSpeed = 6;
-    private AudioSource monsterSounds;  // monster roar
     private bool soundPlaying;
 
-    void Start()
+    /// <summary>
+    /// Initialize.
+    /// </summary>
+    private void Awake()
     {
         player = GameObject.FindGameObjectWithTag("Player");
-        playerTransform = player.GetComponent<Transform>();
         playerStats = player.GetComponent<Stats>();
         torch = GameObject.FindGameObjectWithTag("Torch").GetComponent<Torch>();
+        lighter = GameObject.FindGameObjectWithTag("Lighter").GetComponent<Lighter>();
         monsterSounds = gameObject.GetComponent<AudioSource>();
+    }
+
+    /// <summary>
+    /// Setup.
+    /// </summary>
+    void Start()
+    {
         monsterSounds.Stop();
     }
 
+    /// <summary>
+    /// Called once per frame.
+    /// </summary>
     void Update()
     {
-        chasePlayer();
+        ChasePlayer();
         monsterSounds.loop = soundPlaying;
     }
 
-    //chase player function
-    void chasePlayer()
+    /// <summary>
+    /// Chases the player.
+    /// </summary>
+    private void ChasePlayer()
     {
-        //only chase if torch is lit
-        if (torch.IsLit())
+        //only chase if torch/lighter is lit
+        if (torch.IsLit() || lighter.IsLit())
         {
-            distance = calculateDistance(playerTransform);
+            distance = CalculateDistance(player.transform);
 
             //play roar sound if not currently playing
             if (!soundPlaying)
@@ -48,7 +62,7 @@ public class EnemyAI : MonoBehaviour
                 soundPlaying = true;
 
             }
-            transform.LookAt(playerTransform);
+            transform.LookAt(player.transform);
             transform.position += transform.forward * moveSpeed * Time.deltaTime;
 
             //if player in range of enemy, kill player
@@ -64,10 +78,10 @@ public class EnemyAI : MonoBehaviour
         }
     }
 
-    private float calculateDistance(Transform target)
+    private float CalculateDistance(Transform target)
     {
         Vector3 monPosition = transform.position;
-        Vector3 targetPosition = playerTransform.position;
+        Vector3 targetPosition = player.transform.position;
         float X = Math.Abs(monPosition.x - targetPosition.x);
         float Z = Math.Abs(monPosition.z - targetPosition.z);
         float D = Mathf.Sqrt(Mathf.Pow(X, 2) + Mathf.Pow(Z, 2));

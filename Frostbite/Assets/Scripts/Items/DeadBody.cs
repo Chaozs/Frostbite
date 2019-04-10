@@ -8,16 +8,21 @@ public class DeadBody : Interactable
     /// Interaction behaviour with dead body.
     /// </summary>
 
-    [SerializeField]
-    Stats stats;
+    [SerializeField] Stats stats;
+    private bool interacted;
 
     void Awake()
     {
         stats = FindObjectOfType<Stats>();
+        interacted = false;
     }
 
     public override void Interact()
     {
-        stats.setIsReading(true);
+        if (!interacted)
+        {
+            interacted = true;
+            stats.setIsReading(true);
+        }
     }
 }
