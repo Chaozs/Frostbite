@@ -269,6 +269,78 @@ PrefabInstance:
       propertyPath: m_Name
       value: dead_trees (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100004, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100006, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100008, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100010, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100012, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100014, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100016, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100018, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100020, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100022, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100024, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100026, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100028, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100030, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100032, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100034, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
       propertyPath: m_LocalPosition.x
       value: -98.5
@@ -945,6 +1017,78 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
       propertyPath: m_Name
       value: dead_trees (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100004, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100006, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100008, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100010, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100012, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100014, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100016, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100018, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100020, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100022, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100024, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100026, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100028, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100030, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100032, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100034, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2116,7 +2260,7 @@ GameObject:
   - component: {fileID: 194440326}
   m_Layer: 0
   m_Name: Winter5 (1)
-  m_TagString: Untagged
+  m_TagString: Tree
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2386,7 +2530,7 @@ GameObject:
   - component: {fileID: 262017727}
   m_Layer: 0
   m_Name: Winter3 (1)
-  m_TagString: Untagged
+  m_TagString: Tree
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2792,6 +2936,78 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
       propertyPath: m_Name
       value: dead_trees (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100004, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100006, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100008, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100010, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100012, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100014, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100016, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100018, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100020, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100022, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100024, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100026, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100028, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100030, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100032, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100034, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3227,6 +3443,78 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
       propertyPath: m_Name
       value: dead_trees (16)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100004, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100006, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100008, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100010, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100012, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100014, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100016, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100018, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100020, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100022, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100024, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100026, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100028, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100030, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100032, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100034, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4065,6 +4353,78 @@ PrefabInstance:
       propertyPath: m_Name
       value: dead_trees (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100004, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100006, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100008, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100010, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100012, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100014, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100016, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100018, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100020, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100022, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100024, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100026, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100028, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100030, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100032, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100034, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
       propertyPath: m_LocalPosition.x
       value: -25.1
@@ -4496,6 +4856,78 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
       propertyPath: m_Name
       value: dead_trees (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100004, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100006, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100008, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100010, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100012, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100014, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100016, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100018, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100020, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100022, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100024, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100026, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100028, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100030, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100032, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100034, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5089,6 +5521,78 @@ PrefabInstance:
       propertyPath: m_Name
       value: dead_trees
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100004, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100006, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100008, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100010, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100012, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100014, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100016, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100018, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100020, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100022, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100024, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100026, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100028, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100030, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100032, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100034, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
       propertyPath: m_LocalPosition.x
       value: -157.46873
@@ -5563,7 +6067,7 @@ GameObject:
   - component: {fileID: 595239181}
   m_Layer: 0
   m_Name: Winter9 (1)
-  m_TagString: Untagged
+  m_TagString: Tree
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5655,7 +6159,7 @@ GameObject:
   - component: {fileID: 604193460}
   m_Layer: 0
   m_Name: Walnut__ (1)
-  m_TagString: Untagged
+  m_TagString: Tree
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6220,6 +6724,78 @@ PrefabInstance:
       propertyPath: m_Name
       value: dead_trees (15)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100004, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100006, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100008, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100010, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100012, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100014, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100016, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100018, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100020, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100022, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100024, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100026, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100028, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100030, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100032, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100034, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
       propertyPath: m_LocalPosition.x
       value: -143.7
@@ -6604,6 +7180,78 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
       propertyPath: m_Name
       value: dead_trees (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100004, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100006, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100008, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100010, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100012, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100014, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100016, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100018, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100020, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100022, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100024, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100026, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100028, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100030, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100032, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100034, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
       propertyPath: m_LocalPosition.x
@@ -7424,6 +8072,78 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
       propertyPath: m_Name
       value: dead_trees (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100004, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100006, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100008, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100010, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100012, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100014, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100016, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100018, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100020, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100022, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100024, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100026, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100028, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100030, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100032, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100034, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
       propertyPath: m_LocalPosition.x
@@ -8246,6 +8966,78 @@ PrefabInstance:
       propertyPath: m_Name
       value: dead_trees (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100004, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100006, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100008, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100010, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100012, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100014, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100016, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100018, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100020, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100022, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100024, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100026, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100028, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100030, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100032, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100034, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
       propertyPath: m_LocalPosition.x
       value: 74.44
@@ -8911,6 +9703,78 @@ PrefabInstance:
       propertyPath: m_Name
       value: dead_trees (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100004, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100006, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100008, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100010, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100012, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100014, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100016, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100018, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100020, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100022, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100024, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100026, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100028, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100030, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100032, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100034, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
       propertyPath: m_LocalPosition.x
       value: -224.6
@@ -9453,7 +10317,7 @@ GameObject:
   - component: {fileID: 987506887}
   m_Layer: 0
   m_Name: Winter3 (2)
-  m_TagString: Untagged
+  m_TagString: Tree
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9781,7 +10645,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 1f7aa4d40edff6e48b549003cad031e1, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 1f7aa4d40edff6e48b549003cad031e1, type: 3}
       propertyPath: m_LocalScale.x
@@ -9960,6 +10824,78 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
       propertyPath: m_Name
       value: dead_trees (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100004, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100006, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100008, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100010, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100012, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100014, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100016, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100018, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100020, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100022, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100024, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100026, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100028, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100030, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100032, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100034, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
       propertyPath: m_LocalPosition.x
@@ -11095,7 +12031,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1926568791}
-  - {fileID: 1498041482}
   - {fileID: 1885866658}
   - {fileID: 2132212024}
   m_Father: {fileID: 176334461}
@@ -11324,6 +12259,78 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
       propertyPath: m_Name
       value: dead_trees (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100004, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100006, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100008, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100010, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100012, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100014, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100016, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100018, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100020, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100022, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100024, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100026, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100028, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100030, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100032, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100034, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
       propertyPath: m_LocalPosition.x
@@ -12701,36 +13708,6 @@ CapsuleCollider:
   m_Height: 18.312073
   m_Direction: 1
   m_Center: {x: 0, y: 7, z: 0}
---- !u!1 &1498041481
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1498041482}
-  m_Layer: 0
-  m_Name: Trees
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1498041482
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1498041481}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1277957664}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1502961478
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13262,6 +14239,78 @@ PrefabInstance:
       propertyPath: m_Name
       value: dead_trees (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100004, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100006, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100008, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100010, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100012, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100014, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100016, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100018, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100020, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100022, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100024, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100026, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100028, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100030, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100032, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100034, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
       propertyPath: m_LocalPosition.x
       value: -243.9
@@ -13713,7 +14762,7 @@ GameObject:
   - component: {fileID: 1589386922}
   m_Layer: 0
   m_Name: Winter9 (2)
-  m_TagString: Untagged
+  m_TagString: Tree
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14078,6 +15127,78 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
       propertyPath: m_Name
       value: dead_trees (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100004, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100006, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100008, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100010, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100012, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100014, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100016, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100018, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100020, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100022, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100024, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100026, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100028, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100030, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100032, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100034, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
       propertyPath: m_LocalPosition.x
@@ -14644,6 +15765,78 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
       propertyPath: m_Name
       value: dead_trees (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100004, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100006, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100008, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100010, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100012, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100014, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100016, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100018, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100020, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100022, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100024, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100026, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100028, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100030, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100032, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100034, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
+      propertyPath: m_TagString
+      value: Tree
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 0a5baf0400893ed42822c1932e879768, type: 3}
       propertyPath: m_LocalPosition.x
@@ -16795,7 +17988,7 @@ GameObject:
   - component: {fileID: 2118600173}
   m_Layer: 0
   m_Name: Winter4 (1)
-  m_TagString: Untagged
+  m_TagString: Tree
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16956,7 +18149,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2132212024}
   m_Layer: 0
-  m_Name: All Trees
+  m_Name: Trees
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -16993,7 +18186,7 @@ Transform:
   - {fileID: 735202040}
   - {fileID: 2022497593}
   m_Father: {fileID: 1277957664}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2135294508
 PrefabInstance:

@@ -8,6 +8,7 @@ TagManager:
   - Torch
   - House
   - Lighter
+  - Tree
   layers:
   - Default
   - TransparentFX

@@ -46,6 +46,17 @@ public class EnemyAI : MonoBehaviour
     }
 
     /// <summary>
+    /// Ignores collisions with trees.
+    /// </summary>
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.tag == "Tree")
+        {
+            Physics.IgnoreCollision(collision.collider, GetComponent<CapsuleCollider>());
+        }
+    }
+
+    /// <summary>
     /// Chases the player.
     /// </summary>
     private void ChasePlayer()
