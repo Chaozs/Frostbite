@@ -13187,7 +13187,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1796137368096064, guid: 7c1543f51c5b8cc488fc53ab3cbffbb1, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4984444669274794, guid: 7c1543f51c5b8cc488fc53ab3cbffbb1, type: 3}
       propertyPath: m_LocalPosition.x
@@ -18052,6 +18052,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 114318839949368338, guid: 5e9e851c0e142814dac026a256ba2ac0,
         type: 3}
       propertyPath: torchStuff.Array.size
@@ -18117,10 +18121,6 @@ PrefabInstance:
         type: 3}
       propertyPath: ExternalForcesModule.multiplier
       value: 0.0003
-      objectReference: {fileID: 0}
-    - target: {fileID: 100002, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 23682208242904222, guid: 5e9e851c0e142814dac026a256ba2ac0,
         type: 3}
