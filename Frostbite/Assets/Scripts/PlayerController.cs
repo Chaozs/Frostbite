@@ -12,11 +12,8 @@ public class PlayerController : MonoBehaviour
     private Torch torchScript;
     private Stats stats;
 
-    [SerializeField]
-    private GameObject[] books = new GameObject[4];
-
-    [SerializeField]
-    private GameObject inventory;
+    [SerializeField] private GameObject[] books = new GameObject[4];
+    [SerializeField] private GameObject inventory;
 
     private bool showInventory = false;
     private int currentDisplayedBooks = 0;
@@ -36,12 +33,12 @@ public class PlayerController : MonoBehaviour
         }
 
         //book inventory hidden by default
-        for(int i=0; i< books.Length; i++)
+        for (int i = 0; i < books.Length; i++)
         {
             books[i].SetActive(false);
         }
-        currentDisplayedBooks = stats.getPagesLeft();
-        for (int i = 0; i < stats.getPagesLeft(); i++)
+        currentDisplayedBooks = stats.GetPagesLeft();
+        for (int i = 0; i < stats.GetPagesLeft(); i++)
         {
             books[i].SetActive(true);
         }
@@ -55,7 +52,7 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(!stats.getHasLootBody())
+        if (!stats.GetHasLootBody())
         {
             return;
         }
@@ -69,7 +66,7 @@ public class PlayerController : MonoBehaviour
             }
 
             // Handle E key input
-            if (Input.GetKeyDown(KeyCode.E))
+            if (Input.GetKeyDown(KeyCode.E) && !stats.IsLookingAtSnowman())
             {
                 ToggleLitTorch();
             }
@@ -105,8 +102,6 @@ public class PlayerController : MonoBehaviour
         // Only light the torch if torch is currently equipped
         if (torch.activeSelf)
         {
-
-            
             //torch can be put out whenever
             if (torchScript.IsLit())
             {
@@ -115,9 +110,9 @@ public class PlayerController : MonoBehaviour
             else
             {
                 // only light torch is there is paper left
-                if (stats.getPagesLeft() > 0)
+                if (stats.GetPagesLeft() > 0)
                 {
-                    stats.pagesUsed(true);
+                    stats.PagesUsed(true);
                     //use up a page if there are pages left
                     torchScript.SetIsLit(!torchScript.IsLit());
                 }
@@ -143,15 +138,15 @@ public class PlayerController : MonoBehaviour
     }
 
     //update display for books
-    public void updateBooks()
+    public void UpdateBooks()
     {
-        Debug.Log(currentDisplayedBooks + ", " + stats.getPagesLeft());
-        if(currentDisplayedBooks < stats.getPagesLeft())
+        Debug.Log(currentDisplayedBooks + ", " + stats.GetPagesLeft());
+        if (currentDisplayedBooks < stats.GetPagesLeft())
         {
-            books[stats.getPagesLeft() - 1].SetActive(true);
+            books[stats.GetPagesLeft() - 1].SetActive(true);
             currentDisplayedBooks++;
         }
-        else if (currentDisplayedBooks > stats.getPagesLeft())
+        else if (currentDisplayedBooks > stats.GetPagesLeft())
         {
             books[currentDisplayedBooks - 1].SetActive(false);
             currentDisplayedBooks--;
@@ -159,7 +154,7 @@ public class PlayerController : MonoBehaviour
     }
 
     //getter for whether inventory is open
-    public bool isInventoryOpen()
+    public bool IsInventoryOpen()
     {
         return showInventory;
     }

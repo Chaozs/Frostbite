@@ -72,7 +72,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
             // Only allow player controller movements if game has not ended
             if (!gameEnd.IsGameEnded())
             {
-                if (playerController.isInventoryOpen() || characterStats.getIsReading())
+                if (playerController.IsInventoryOpen() || characterStats.getIsReading())
                 {
                     return;
                 }
@@ -111,7 +111,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
             // Only allow player controller movements if game has not ended
             if (!gameEnd.IsGameEnded())
             {
-                if (playerController.isInventoryOpen() || characterStats.getIsReading())
+                if (playerController.IsInventoryOpen() || characterStats.getIsReading())
                 {
                     return;
                 }
@@ -255,7 +255,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
 
         private void RotateView()
         {
-            if (playerController.isInventoryOpen() || characterStats.getIsReading())
+            if (playerController.IsInventoryOpen() || characterStats.getIsReading())
             {
                 return;
             }

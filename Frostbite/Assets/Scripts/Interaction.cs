@@ -26,7 +26,7 @@ public class Interaction : MonoBehaviour
         {
             if (stats.getIsReading())
             {
-                stats.setIsReading(false);
+                stats.SetIsReading(false);
             }
             else
             {

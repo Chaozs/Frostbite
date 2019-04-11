@@ -79,7 +79,7 @@ public class EnemyAI : MonoBehaviour
             //if player in range of enemy, kill player
             if (distance < 6)
             {
-                playerStats.killPlayer();
+                playerStats.KillPlayer();
             }
         }
         else

@@ -22,7 +22,7 @@ public class DeadBody : Interactable
         if (!interacted)
         {
             interacted = true;
-            stats.setIsReading(true);
+            stats.SetIsReading(true);
         }
     }
 }

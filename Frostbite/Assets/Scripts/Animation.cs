@@ -21,7 +21,7 @@ public class Animation : MonoBehaviour
 
     void Update()
     {
-        if(!characterStats.getHasLootBody())
+        if(!characterStats.GetHasLootBody())
         {
             return;
         }

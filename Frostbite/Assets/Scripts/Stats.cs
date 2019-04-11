@@ -7,19 +7,17 @@ using UnityEngine;
 /// </summary>
 public class Stats : MonoBehaviour
 {
-    private Torch torch;            // script attached to the torch
+    private Torch torch;    // script attached to the torch
 
-    [SerializeField] private int health;        // hp of character, ranging from 0 to 100
-    [SerializeField] private int temperature;   // temperature of character, ranging from 0 to 35; determines walking speed
-    [SerializeField]
-    private GameObject openBook;                // book on dead body giving player hints on what to do
-    [SerializeField]
-    private GameObject[] torchStuff;
-    private bool isLosingHealthAndTemp;         // indicates if coroutine LoseHealthAndTempOverTime() is running
-    private bool isGainingHealthAndTemp;        // indicates if coroutine GainHealthAndTempOverTime() is running
+    [SerializeField] private int health;                // hp of character, ranging from 0 to 100
+    [SerializeField] private int temperature;           // temperature of character, ranging from 0 to 35; determines walking speed
+    [SerializeField] private GameObject openBook;       // book on dead body giving player hints on what to do
+    [SerializeField] private GameObject[] torchStuff;
+    private bool isLosingHealthAndTemp;                 // indicates if coroutine LoseHealthAndTempOverTime() is running
+    private bool isGainingHealthAndTemp;                // indicates if coroutine GainHealthAndTempOverTime() is running
     public bool inMonsterRange;
-    private bool isTakingDamageFromMonster;     // indicates if coroutine loseHealthEnemy() is running
-    private int pagesLeft;                      // how many pages left to burn
+    private bool isTakingDamageFromMonster;             // indicates if coroutine loseHealthEnemy() is running
+    private int pagesLeft;                              // how many pages left to burn
     private PlayerController playerController;
     private bool isReading;
     private bool hasLootBody = false;
@@ -35,7 +33,7 @@ public class Stats : MonoBehaviour
         isTakingDamageFromMonster = false;
         pagesLeft = 3;
         playerController = gameObject.GetComponent<PlayerController>();
-        foreach(GameObject playerItem in torchStuff)
+        foreach (GameObject playerItem in torchStuff)
         {
             playerItem.transform.localScale -= new Vector3(0.3f, 0.3f, 0.3f);
         }
@@ -43,16 +41,23 @@ public class Stats : MonoBehaviour
 
     void Update()
     {
-        if(!hasLootBody)
+        if (!hasLootBody)
         {
             return;
         }
+
         // Find the script attached to torch
         if (torch == null)
         {
             torch = GameObject.FindGameObjectWithTag("Torch").GetComponent<Torch>();
         }
-        
+
+        // Disable torch if player is looking at snowman
+        if (IsLookingAtSnowman())
+        {
+            torch.SetIsLit(false);
+        }
+
         if (!torch.IsLit())
         {
             // If torch is not lit, lose HP and temperature over time
@@ -81,14 +86,30 @@ public class Stats : MonoBehaviour
         }
     }
 
+    public bool IsLookingAtSnowman()
+    {
+        Camera cam = transform.Find("FirstPersonCharacter").GetComponent<Camera>();
+        GameObject snowman = GameObject.Find("Snowman_02");
+        Vector3 viewPos = cam.WorldToViewportPoint(snowman.transform.position);
+        if (viewPos.x > 0 && viewPos.x < 1 &&
+            viewPos.y > 0 && viewPos.y < 1 &&
+            viewPos.z > 0)
+        {
+            return true;
+        }
+
+        return false;
+    }
+
+
     //getter for pages left
-    public int getPagesLeft()
+    public int GetPagesLeft()
     {
         return pagesLeft;
     }
 
     //function for adding or consuming pages
-    public void pagesUsed(bool use)
+    public void PagesUsed(bool use)
     {
         if (use)
         {
@@ -99,7 +120,7 @@ public class Stats : MonoBehaviour
             pagesLeft = pagesLeft + 1;
         }
         //update display for books
-        playerController.updateBooks();
+        playerController.UpdateBooks();
     }
 
     /// <summary>
@@ -173,14 +194,20 @@ public class Stats : MonoBehaviour
             {
                 temperature--;
             }
-
-            // If lighter is equipped, lose HP/temp slower
+            
             if (GameObject.FindGameObjectWithTag("Lighter") != null)
             {
+                // If lighter is equipped, lose HP/temp slower
                 yield return new WaitForSeconds(4);
+            }
+            else if (IsLookingAtSnowman())
+            {
+                // Lose HP/temp faster if looking at snowman
+                yield return new WaitForSeconds(1);
             }
             else
             {
+                // Default speed to lose HP/temp
                 yield return new WaitForSeconds(2);
             }
         }
@@ -242,7 +269,7 @@ public class Stats : MonoBehaviour
         isTakingDamageFromMonster = false;
     }
 
-    public void killPlayer()
+    public void KillPlayer()
     {
         health = 0;
     }
@@ -280,19 +307,15 @@ public class Stats : MonoBehaviour
         this.temperature = temperature;
     }
 
-    public void setHasLootBody(bool loot)
-    {
-        hasLootBody = loot;
-    }
-
-    public bool getHasLootBody()
+    public bool GetHasLootBody()
     {
         return hasLootBody;
     }
-    public void setIsReading(bool reading)
+
+    public void SetIsReading(bool reading)
     {
         //player is now reading the book
-        if(reading)
+        if (reading)
         {
             openBook.SetActive(true);
             isReading = true;

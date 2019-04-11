@@ -17,7 +17,7 @@ public class Cloth : Interactable
 
     public override void Interact()
     {
-        if (!stats.getHasLootBody())
+        if (!stats.GetHasLootBody())
         {
             return;
         }
@@ -25,9 +25,9 @@ public class Cloth : Interactable
         // Add cloth to inventory
 
         //increment pages in inventory
-        if (stats.getPagesLeft() < 4)
+        if (stats.GetPagesLeft() < 4)
         {
-            stats.pagesUsed(false);
+            stats.PagesUsed(false);
             Destroy(gameObject);
         }
 
