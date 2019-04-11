@@ -11,6 +11,10 @@ public class EnemyAI : MonoBehaviour
     private Torch torch;                // player's torch
     private Lighter lighter;            // player's lighter
     private AudioSource monsterSounds;  // monster roar
+	private AudioClip monsterWhispers; //monster whispering
+	private Renderer render;
+	private Stats characterStats;
+	bool frostAura = false;
 
     private float distance;
     private readonly int moveSpeed = 6;
@@ -26,6 +30,10 @@ public class EnemyAI : MonoBehaviour
         torch = GameObject.FindGameObjectWithTag("Torch").GetComponent<Torch>();
         lighter = GameObject.FindGameObjectWithTag("Lighter").GetComponent<Lighter>();
         monsterSounds = gameObject.GetComponent<AudioSource>();
+
+
+		render = GetComponentInChildren<Renderer> ();
+
     }
 
     /// <summary>
@@ -34,6 +42,8 @@ public class EnemyAI : MonoBehaviour
     void Start()
     {
         monsterSounds.Stop();
+
+		characterStats = GameObject.FindGameObjectWithTag("Player").GetComponent<Stats>();
     }
 
     /// <summary>
@@ -41,9 +51,27 @@ public class EnemyAI : MonoBehaviour
     /// </summary>
     void Update()
     {
+		if (render.isVisible) {
+			if (!frostAura) {
+				InvokeRepeating ("DecreaseTemperature", 0, 1);
+				frostAura = true;
+			} else {
+				//do nothing
+			}
+		} else {
+			if (frostAura) {
+				CancelInvoke ();
+				frostAura = false;
+			}
+		}
+
         ChasePlayer();
         monsterSounds.loop = soundPlaying;
     }
+
+	void DecreaseTemperature() {
+		characterStats.SetTemperature (characterStats.GetTemperature() - 1);
+	}
 
     /// <summary>
     /// Chases the player.

@@ -11,12 +11,20 @@ public class Torch : MonoBehaviour
 
     [SerializeField] private bool isLit;    // indicates whether the torch is currently lit or not
     private bool timerRunning;              // whether or not the torch timer is currently running
+	AudioSource torchSounds;
+
+	private bool isSoundPlaying;
+
+	private void Awake() {
+		torchSounds = GetComponent<AudioSource>();
+	}
 
     /// Use this for initialization
     void Start()
     {
         flames = GameObject.FindGameObjectWithTag("Flames");    // find the flames object and set it
 
+		torchSounds.Stop ();
         // Set variables to starting values
         isLit = false;
         timerRunning = false;
@@ -25,8 +33,14 @@ public class Torch : MonoBehaviour
     /// Updates the status of the torch
     void Update()
     {
+		torchSounds.loop = isSoundPlaying;
         if (isLit)
         {
+			if (!isSoundPlaying) {
+				torchSounds.Play ();
+				isSoundPlaying = true;
+			}
+			
             // Set flames gameobject to active if torch is lit
             if (!flames.activeSelf)
             {
@@ -41,6 +55,8 @@ public class Torch : MonoBehaviour
         }
         else
         {
+			torchSounds.Stop ();
+			isSoundPlaying = false;
             // Set flames gameobject to inactive if torch is not lit
             if (flames.activeSelf)
             {

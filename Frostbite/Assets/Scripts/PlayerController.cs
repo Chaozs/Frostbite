@@ -55,6 +55,7 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
         if(!stats.getHasLootBody())
         {
             return;
@@ -104,13 +105,12 @@ public class PlayerController : MonoBehaviour
     {
         // Only light the torch if torch is currently equipped
         if (torch.activeSelf)
-        {
-
-            
+        {   
             //torch can be put out whenever
             if (torchScript.IsLit())
             {
                 torchScript.SetIsLit(!torchScript.IsLit());
+
             }
             else
             {
@@ -120,6 +120,7 @@ public class PlayerController : MonoBehaviour
                     stats.pagesUsed(true);
                     //use up a page if there are pages left
                     torchScript.SetIsLit(!torchScript.IsLit());
+
                 }
             }
 
