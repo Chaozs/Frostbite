@@ -12,10 +12,13 @@ public class EnemyAI : MonoBehaviour
     private Lighter lighter;            // player's lighter
     private AudioSource monsterSounds;  // monster roar
 	private AudioSource monsterWhispers; //monster whispering
-	private Renderer render;
+	//private Renderer render;
 	private Stats characterStats;
 	bool frostAura = false;
 	bool whispering = false;
+
+	private float maxSightDistance;
+	RaycastHit hit;
 
     private float distance;
     private readonly int moveSpeed = 6;
@@ -33,7 +36,9 @@ public class EnemyAI : MonoBehaviour
         monsterSounds = gameObject.GetComponent<AudioSource>();
 		monsterWhispers = transform.Find ("creepywhispers").GetComponent<AudioSource> ();
 
-		render = GetComponentInChildren<Renderer> ();
+		//render = GetComponentInChildren<Renderer> ();
+
+		maxSightDistance = 10;
 
     }
 
@@ -43,9 +48,28 @@ public class EnemyAI : MonoBehaviour
     void Start()
     {
         monsterSounds.Stop();
+		monsterWhispers.Stop ();
 
 		characterStats = GameObject.FindGameObjectWithTag("Player").GetComponent<Stats>();
     }
+
+	bool PlayerSeesMe() {
+		Renderer render = GetComponentInChildren<Renderer> ();
+
+		//if (Physics.Raycast (player.transform.position, player.transform.forward, out hit, 100)) {
+		//	if (hit.collider.gameObject == this) {
+		if (render.isVisible) {
+				Debug.Log ("Player can see me");
+				return true;
+			} else {
+				Debug.Log ("Player can't see me");
+				return false;
+			}
+		//} else {	
+		//	return false;
+		//}
+
+	}
 
     /// <summary>
     /// Called once per frame.
@@ -53,13 +77,15 @@ public class EnemyAI : MonoBehaviour
     void Update()
     {
 		monsterWhispers.loop = whispering;
-		if (render.isVisible) {
+		if (PlayerSeesMe()) {
+			
 			if (!whispering) {
 				monsterWhispers.Play ();
 				whispering = true;
+			} else {
 			}
 			if (!frostAura) {
-				//InvokeRepeating ("DecreaseTemperature", 0, 1);
+				InvokeRepeating ("DecreaseTemperature", 0, 1);
 				frostAura = true;
 			} else {
 				//do nothing
@@ -72,10 +98,11 @@ public class EnemyAI : MonoBehaviour
 			if (whispering) {
 				monsterWhispers.Stop ();
 				whispering = false;
+			} else {
+				//do nothing
 			}
 		}
-
-		Debug.Log ("Before chase");
+						
         ChasePlayer();
         monsterSounds.loop = soundPlaying;
     }
@@ -97,6 +124,7 @@ public class EnemyAI : MonoBehaviour
             //play roar sound if not currently playing
             if (!soundPlaying)
             {
+				Debug.Log ("No roar, playing roar");
                 monsterSounds.Play();
                 soundPlaying = true;
 
