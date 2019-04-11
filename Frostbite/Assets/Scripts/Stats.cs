@@ -21,6 +21,9 @@ public class Stats : MonoBehaviour
     private PlayerController playerController;
     private bool isReading;
     private bool hasLootBody = false;
+    private AudioSource source;
+    private AudioClip whispers;
+    private bool whisperIsPlaying;
 
     // Use this for initialization
     void Awake()
@@ -37,6 +40,7 @@ public class Stats : MonoBehaviour
         {
             playerItem.transform.localScale -= new Vector3(0.3f, 0.3f, 0.3f);
         }
+        source = gameObject.transform.Find("FirstPersonCharacter").gameObject.GetComponent<AudioSource>();
     }
 
     void Update()
@@ -55,7 +59,20 @@ public class Stats : MonoBehaviour
         // Disable torch if player is looking at snowman
         if (IsLookingAtSnowman())
         {
+            if(!whisperIsPlaying)
+            {
+                whisperIsPlaying = true;
+                source.Play();
+            }
             torch.SetIsLit(false);
+        }
+        else
+        {
+            if(whisperIsPlaying)
+            {
+                source.Stop();
+                whisperIsPlaying = false;
+            }
         }
 
         if (!torch.IsLit())
