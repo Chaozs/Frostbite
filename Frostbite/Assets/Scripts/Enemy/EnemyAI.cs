@@ -59,7 +59,7 @@ public class EnemyAI : MonoBehaviour
 				whispering = true;
 			}
 			if (!frostAura) {
-				InvokeRepeating ("DecreaseTemperature", 0, 1);
+				//InvokeRepeating ("DecreaseTemperature", 0, 1);
 				frostAura = true;
 			} else {
 				//do nothing
@@ -75,6 +75,7 @@ public class EnemyAI : MonoBehaviour
 			}
 		}
 
+		Debug.Log ("Before chase");
         ChasePlayer();
         monsterSounds.loop = soundPlaying;
     }
