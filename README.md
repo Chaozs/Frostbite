@@ -1,6 +1,6 @@
 # Frostbite
 
-A horror/survival game, in which the protagonist must reach shelter in the midst of the blistering dark winter. In this terrain, something eerie lurks on the shadows.
+A horror/survival game, in which the protagonist must reach shelter in the midst of the blistering dark winter. In this terrain, something eerie lurks in the shadows.
 
 This project is for the Final Project deliverable at McMaster University for the course SE/CS 4GC3 (Winter 2019 term).
 
