@@ -23,5 +23,8 @@ The controls of the game is as follows:
 - **F:** Interact with items (ie. books, house)
 - **I:** open/close inventory
 
+Executable can be downloaded here:
+https://drive.google.com/open?id=1AH0qbscm8SjpDNEjZ2tgZI4aj3ok9d4M
+
 ## Instructions to Play
 - Run **Frostbite.exe**
